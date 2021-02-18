@@ -5,19 +5,21 @@ ls -R /
 Ctrl+ L
 
 
-{ "instructions": "**Get inside** the `thechmdchallenge/` directory" }, cd thechmchallenge
+    { "instructions": "**Get inside** the `thechmdchallenge/` directory" }, cd thechmchallenge
     { "instructions": "Who won the previous challenge? Each winner should explain what he/she did to the entire class each time" },
     { "instructions": "**Print** current directory path" },PWD
     { "instructions": "**List all** the files from the **current directory** including the hidden ones" }, ls   ls -la
     { "instructions": "Now **list all** the files inside the project, recursively (all files in the hierarchy)." }, ls -R /
     { "instructions": "**Clear** all the clutter from the command line" }, Ctrl + L
-    { "instructions": "**Go** to the last level below the **small-name** folder and **show** on the console the content of the `trophy.txt` file." },
-    { "instructions": "**Move** one level up and get to the **funcode** directory and **list all** files with the javascript typical extension." },
-    { "instructions": "**Create** a new directory inside `funcode/the-most-funny/` called \"**not-that-funny**\"." },
+    { "instructions": "**Go** to the last level below the **small-name** folder and **show** on the console the content of the `trophy.txt` file." }, find / -name trophy.txt y muestra la dirección
+    { "instructions": "**Move** one level up and get to the **funcode** directory and **list all** files with the javascript typical extension." }, cd funcode/ &&  ls *.js
+    { "instructions": "**Create** a new directory inside `funcode/the-most-funny/` called \"**not-that-funny**\"." }, cd funcode/the-most-funny/ && mkdir not-that-funny
     { "instructions": "**Create a copy** of **the-mostboring-text.txt** (you can find it within `/boringfolder/`'s children) and **name** it **lol.txt**." },
+    cd boringfolder/event-more-boring/i-can-believe-how-boring/the-ulrimate-boring-inception/ && cp the-mostboring-text.txt lol.txt
     { "instructions": "**Move** `funcode/kids.jpg` inside `funcode/images/hello/`" },
-    { "instructions": "**Remove** the \"**small-name**\" directory. " },
-    { "instructions": "**Print** in the command line the content of `the-ultimate-joke.txt`." },
-    { "instructions": "**Remove** all the contents form the **boringfolder**, they are extremly boring..." },
-    { "instructions": "**Open** the file `kamehameha/dragon-ball-jokes.md` using the **VI command line text editor**" },
-    { "instructions": "**Update** the file kamehameha/*dragon-ball-jokes.md* by removing the first joke you read on the file, finally **save and close** the text editor." }
+    cd funcode && mv kids.jpg ../funcode/images/hello
+    { "instructions": "**Remove** the \"**small-name**\" directory. " }, rm -r small-name
+    { "instructions": "**Print** in the command line the content of `the-ultimate-joke.txt`." }, cat funcode/the-most-funny/lol/the-ultimate-joke.txt
+    { "instructions": "**Remove** all the contents form the **boringfolder**, they are extremly boring..." }, rm -r boringfolder/*
+    { "instructions": "**Open** the file `kamehameha/dragon-ball-jokes.md` using the **VI command line text editor**" }, vi kamehameha/dragon-ball-jokes.md
+    { "instructions": "**Update** the file kamehameha/*dragon-ball-jokes.md* by removing the first joke you read on the file, finally **save and close** the text editor." } :wq
